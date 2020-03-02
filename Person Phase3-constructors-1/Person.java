@@ -1,35 +1,47 @@
+/**
+ * Phase 3 - Added varying constructors with/without parameters
+ * @author benwiersma
+ * CMSC203
+ */
 public class Person {
-	// fields
+	
 	private String name;
 	private int age;
 
-	// methods
-	//no-arg constructor method
+	/**
+	 * Default no-arg constructor
+	 */
 	public Person()
 	{
 		name = "noname";
 		age = 1;
 	}
-	//parameterized constructor
+	
+	/**
+	 * Parameterized constructor
+	 * @param name
+	 */
 	public Person(String name)
 	{
 		this.name = name;
 		age = 1;
 	}
-	// parameterized constructor to set
-	// name and age
+	
+	/**
+	 * Parameterized constructor
+	 * @param name
+	 * @param age
+	 */
 	public Person(String name, int age)
 	{
 		this.name = name;
 		this.age = age;
 	}
 	
-	// setter method
 	public void setName(String name)
 	{
 		this.name = name;
 	}
-	// getter method
 	public String getName()
 	{
 		return name;

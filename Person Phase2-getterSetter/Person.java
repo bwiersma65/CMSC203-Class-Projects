@@ -1,15 +1,28 @@
+/**
+ * Phase 2 - Add getter and setter methods to access private class fields
+ * @author benwiersma
+ * CMSC203
+ */
 public class Person {
-	// fields
+	
+	/**
+	 * 2 - Fields have been made private; only class members may access them now
+	 */
 	private String name;
 	private int age;
 
-	// methods
-	// setter method
+	/**
+	 * Setter method
+	 * @param name
+	 */
 	public void setName(String name)
 	{
 		this.name = name;
 	}
-	// getter method
+	/**
+	 * Getter method
+	 * @return
+	 */
 	public String getName()
 	{
 		return name;

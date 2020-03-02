@@ -1,3 +1,8 @@
+/**
+ * Phase 1 - Create driver class with main method
+ * @author benwiersma
+ * CMSC203
+ */
 public class ClassDemo {
 	
 	 public static void main(String[] args) {
@@ -40,5 +45,6 @@ public class ClassDemo {
 	  */
 	 a.SayName(); 
 	 b.SayName(); 
+	 
 	 }
-	}
+}

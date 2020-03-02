@@ -1,7 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * Phase 4 - Uses Scanner class to instantiate objects with user input 
+ * @author benwiersma
+ * CMSC203
+ */
 public class ClassDemo {
+	
 	public static void main(String[] args) {
+		
 		Person a = new Person();
 		
 		System.out.println(a.getName());
@@ -13,7 +20,8 @@ public class ClassDemo {
 		a.setAge(21);
 		
 		System.out.println(a.getAge());	
-		// create object named b with name Kim
+		
+		
 		Person b = new Person("Kim");
 		System.out.println(b.getName());
 		System.out.println(b.getAge());	
@@ -22,8 +30,9 @@ public class ClassDemo {
 		System.out.println(c.getName());
 		System.out.println(c.getAge());
 		
-		//Create another person object d, 
-		//ask for user to select name and age
+		/**
+		 * Scanner object created for taking input
+		 */
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Please enter the name: ");

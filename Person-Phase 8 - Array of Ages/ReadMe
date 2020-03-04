@@ -1,0 +1,6 @@
++ Added integer array to Demo for storing ages as they are input by user
+
+    Modified do-while to prevent looping when array is full
+    
+    At end of Demo, prints ages from array
+                    calculates average age and prints it

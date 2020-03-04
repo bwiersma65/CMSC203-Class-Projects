@@ -1,0 +1,7 @@
++ Added String array to Person class
+
+    Stores names of cities Person used to live
+    
+    Added getter method for array
+    Added method to add new cities to array
+    Added method returning String of all former cities of residence

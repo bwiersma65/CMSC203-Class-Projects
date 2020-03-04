@@ -1,35 +1,38 @@
+/**
+ * Phase 6 - Added a toString class method
+ * @author benwiersma
+ * CMSC203
+ */
 public class Person {
-	// fields
+
 	private String name;
 	private int age;
 
-	// methods
-	//no-arg constructor method
+	
 	public Person()
 	{
 		name = "noname";
 		age = 1;
 	}
-	//parameterized constructor
+
 	public Person(String name)
 	{
 		this.name = name;
 		age = 1;
 	}
-	// parameterized constructor to set
-	// name and age
+	
+	
 	public Person(String name, int age)
 	{
 		this.name = name;
 		this.age = age;
 	}
 	
-	// setter method
+
 	public void setName(String name)
 	{
 		this.name = name;
 	}
-	// getter method
 	public String getName()
 	{
 		return name;
@@ -43,6 +46,8 @@ public class Person {
 	{
 		return age;
 	}
+	
+	
 	public void SayName() {
 		System.out.println("My name is " + name + " and my age "
 							+ "is " + age);

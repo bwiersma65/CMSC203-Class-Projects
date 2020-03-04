@@ -1,0 +1,3 @@
++ Added another array of Person objects
+
+    Enables user to store objects in array, meaning multiple accessible objects can exist at once

@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
 /**
  *  Added component: using arrays to save Person objects
  * 1.Create array persons of type Person of size 5
@@ -9,6 +8,11 @@ import javax.swing.JOptionPane;
  *  @author  Student (Kian)
  *
  */
+/**
+ * Phase 9 - Added array for storing Person objects
+ * @author benwiersma
+ * CMSC203
+ */
 public class ClassDemo {
 	public static void main(String[] args) {
 	
@@ -16,46 +20,51 @@ public class ClassDemo {
 		int[] personAges = new int[SIZE];
 		Person [] persons = new Person[SIZE];
 		
-		int numOfPersons = 0;   //keeps track of the number of persons entered by the user
+		int numOfPersons = 0;
 		String name,ans;
 		int age, ageTotal = 0;
 		double ageAvg;
 		
 		Person p;
 		Scanner input = new Scanner(System.in);
+		
 		do {
 
 			System.out.println("Enter name :");
 			name = input.nextLine();
+			
 			System.out.println("Enter age :");
 			age = input.nextInt();
 			
 			personAges[numOfPersons] = age;
-			/*create the Person object and 
-			 * save the object in to the persons array
+			/**
+			 * Instantiate Person object, store inside array
 			 */
-			persons[numOfPersons] = new Person(name,age,20);  
-			numOfPersons++;   // increment the number of persons
+			persons[numOfPersons++] = new Person(name,age,20);  
 			
 			input.nextLine();
+			
 			System.out.println("Do you want to continue? y/n");
 			ans = input.nextLine();
 			
 		}while (ans.equals("y") && numOfPersons < SIZE );
 		
-		 
 		System.out.print("You entered : ");
-		//Display ages from the ages Array and add each to the ageTotal
-		for (int i = 0; i < numOfPersons; i++) {  //Display ages from the array and add them up
+
+		for (int i = 0; i < numOfPersons; i++) {
 			System.out.print(personAges[i]+ " ");
 			ageTotal += personAges[i];
 		}
 		
 		ageAvg = (double)ageTotal / (numOfPersons);
+		
 		System.out.println("\nThe average of ages is " + ageAvg);
 		
 		System.out.println("Here is the list of persons : ");
-		//Display the information of Person objects from persons array
+
+		/**
+		 * Iterates through Person array, printing each object's toString
+		 */
 		for (int i = 0; i < numOfPersons; i++)
 			System.out.println(persons[i]);
 		

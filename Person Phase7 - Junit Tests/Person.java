@@ -1,9 +1,8 @@
-/** 
-*The purpose of this class is to model a television
-*Your name and today’s date
-*@author khandan
-*/
-
+/**
+ * Phase 7 - New class field, class method added
+ * @author benwiersma
+ * CMSC203
+ */
 public class Person {
 	
 	private String name;
@@ -11,8 +10,7 @@ public class Person {
 	private double minWage;
 
 	/**
-	 * no-arg constructor, creates a Person
-	 * object with noname , age of 1 and minWage of 10
+	 * No-arg initializes minWage to 10.0
 	 */
 	public Person()
 	{
@@ -21,25 +19,13 @@ public class Person {
 		minWage = 10.0;
 	}
 	 
-	/**
-	 * parameterized constructor, creates a Person
-	 * object with a name , age of 1 and minWage of 10
-	 * @param name name of the person
-	 */
 	public Person(String name)
 	{
 		this.name = name;
 		age = 1;
 		minWage = 10.0;
 	}
- 
-	/**
-	 * parameterized constructor, creates a Person
-	 * object with a name , age  and minWage  
-	 * @param name name of the person
-	 * @param age person's age
-	 * @param minWage minimum wage
-	 */
+ 	
 	public Person(String name, int age, double minWage)
 	{
 		this.name = name;
@@ -47,18 +33,11 @@ public class Person {
 		this.minWage = minWage;
 	}
 	
-	/**
-	 * sets the name of the person
-	 * @param name the name of the person
-	 */
+	
 	public void setName(String name)
 	{
 		this.name = name;
 	}
-	/**
-	 * gets  the name of the person
-	 * returns the person's name
-	 */
 	public String getName()
 	{
 		return name;
@@ -72,6 +51,7 @@ public class Person {
 	{
 		return age;
 	}
+	
 	public void setWage(double minWage)
 	{
 		this.minWage = minWage;
@@ -80,18 +60,13 @@ public class Person {
 	{
 		return minWage;
 	}
-	/**
-	 * displays the name and the age of the person
-	 * 
-	 */
+	
+	
 	public void SayName() {
 		System.out.println("My name is " + name + " and my age "
 							+ "is " + age);
 	}
-	/**
-	 * increments age of the person
-	 * @param name the name of the person
-	 */
+	
 	public void HaveBirthday() {
 		age++;
 	}
@@ -105,11 +80,7 @@ public class Person {
 		minWage = (minWage * perc)/100 + minWage;
 	}
 	
-	/**
-	 * toString method returns a String 
-	 * representing a Person object
-	 * @return returns String representation of object
-	 */
+	
 	public String toString()
 	{
 		return "The person's name is " + 

@@ -1,0 +1,4 @@
+Added minWage field (along with getters and setters) and increaseWage method to Person class
+Reverted Demo file to Phase 6 (toString)
+Added JUnit Test file:
+  Unit test files possess specialized methods with the sole purpose of testing the functionality of a class' methods

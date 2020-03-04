@@ -5,3 +5,6 @@
     Added getter method for array
     Added method to add new cities to array
     Added method returning String of all former cities of residence
+
+- Removed overarching do-while loop from Demo
++ Added do-while loop for user to input names of cities

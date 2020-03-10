@@ -1,0 +1,18 @@
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+
+		// 1. Create a 2-D array named scores that 
+		//    holds scores (int) of three students for 4 tests
+
+		// 2. Initialize scores with -1 (use loops)
+		
+		// 3. Ask user to enter score for 
+		// 	  specific test and specific student
+		//	  for example: "enter test score 1 for student 2"
+		
+		// 4. Display the information of students scores in the array
+		// 		(Notice to only show the scores that have been set)
+	}
+
+}
